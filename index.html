@@ -7,7 +7,8 @@
     <title>Portfolio Dina</title>
 
     <!-- css -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
 </head>
 
 <body>
@@ -20,25 +21,38 @@
          <nav>
             <a href="#home">Home</a>
             <a href="#our-profile">Our Profile</a>
-            <a href="#achievement">Achievement</a>
+            <a href="#hobi">Hobbies</a>
+            <a href="#project">Project</a>
             <a href="#message-us">Message Us</a>
          </nav>
     </header>
-
-    <!-- garis lurus horizontal -->
-    <hr/>
 
     <!-- main content -->
     <main>
         <!-- home content -->
         <section id="home">
             <header>
-                <h1>Hi user, welcome to my Portfolio</h1>
-                <p>here you can see my profile,achievement, and message us</p>
+                
             </header>
 
             <!-- banner autoslide -->
-             <div class="banner-img"></div>
+             <div class="banner-img">
+                <div class="text-overlay">
+                    <h1 class="animasi-h1">Hi <span id="name">user</span>, welcome to my Portfolio</h1>
+                    <p>here you can see my profile,hobbies, project, and message us</p>
+                    <button id="tombol">Ganti Nama</button>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-img">
+                        <img src="assets/bg_keyboard.jpg" alt="gambar bg_keyboard" class="carousel-slide">
+                        <img src="assets/bg_lampu.jpg" alt="gambar bg_keyboard" class="carousel-slide">
+                        <img src="assets/bg_orang.jpg" alt="gambar bg_keyboard" class="carousel-slide">
+                        <img src="assets/bg_meja.jpg" alt="gambar bg_keyboard" class="carousel-slide">
+                        <img src="assets/bg_buku.jpg" alt="gambar bg_keyboard" class="carousel-slide">
+                    </div>
+                </div>
+             </div>
         </section>
 
         <hr/>
@@ -49,22 +63,84 @@
                 <h1>Our profile</h1>
             </header>
 
-            <!-- profile content -->
+            <!-- profile content -->     
              <div class="our-profile-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magni?</p>
+                <div class="left-content">
+                    <p>Hello everyone, I am Dina Rahma Dita. I am a 6th semester student of Informatics Engineering at Institut Teknologi Sumatera. 
+                        I am interested in web development and content writing. I am also active in various organizational activities 
+                        and have internship experience in several technology companies. I am always eager to learn new things 
+                        and develop my skills in the field of information technology. Follow me on my social media.
+                        <br/>
+
+                        <a href="http://instagram.com/dinarahmadita_" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="www.linkedin.com/in/dinarahmadita" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ditaalfhara.ditaalfhara" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </p>
+                    
+                </div>
+
+                <div class="right-content">
+                    <img src="assets/bg_png2.png" alt="ini bg dina">
+                </div>
              </div>
          </section>
 
-        <!-- achievement content -->
-         <section id="achievement">
+         <!-- Hobbies content -->
+         <section id="hobi">
             <header>
-                <h1>Achievement</h1>
+                <h1>Hobbies</h1>
             </header>
 
-            <!-- achievement content -->
-            <div class="achievement-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequatur?</p>
-            </div>
+            <!-- Hobbies content -->
+            <div class="hobbies-content">
+                <div class="project-grid-hobi">
+                    <div class="project-item-hobi">
+                        <img src="assets/airplane.png" alt="Proyek 4" class="project-image-hobi">
+                        <p>Travelling</p>
+                    </div>
+                    <div class="project-item-hobi">
+                        <img src="assets/fast-food.png" alt="Proyek 5" class="project-image-hobi">
+                        <p>Eating</p>
+                    </div>
+                    <div class="project-item-hobi">
+                        <img src="assets/headphones.png" alt="Proyek 6" class="project-image-hobi">
+                        <p>Listening Music</p>
+                    </div>
+                    <div class="project-item-hobi">
+                        <img src="assets/book-stack.png" alt="Proyek 6" class="project-image-hobi">
+                        <p>Reading a Book</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- project content -->
+         <section id="project">
+            <header>
+                <h1>Project</h1>
+            </header>
+
+            <!-- project content -->
+            <div class="project-content">
+                <div class="project-grid">
+                    <div class="project-item">
+                        <a href="https://dinarahmadita12.github.io/HTML-CSS-ReVou/" target="_blank"><img src="assets/breezebay.png" alt="Proyek 1" class="project-image"></a>
+                        <p>Project 1 - Landing Page of Breezebay</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://www.figma.com/design/kfQgdszA3bffCLFsCwvLUw/TUBES-IMK?node-id=2109-636&t=eIlVB0HJsE1yEr7v-1" target="_blank"><img src="assets/Login.png" alt="Proyek 2" class="project-image"></a>
+                        <p>Project 2- Design UI/UX for Website "Makan Siang Gratis"</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://medium.com/hmif-itera/inovasi-telerobotik-mengubah-cara-kita-melihat-bedah-urologi-3afdd6e8e482" target="_blank"><img src="assets/medium.png" alt="Proyek 3" class="project-image"></a>
+                        <p>Project 3 - Article about Technology</p>
+                    </div>
+                </div>
          </section>
 
         <!-- message us content -->
@@ -73,9 +149,41 @@
                 <h1>Message Us</h1>
             </header>
 
-            <!-- message-us content -->
-            <div class="message-us-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nulla!</p>
+            <div class="form-container">
+                <!-- Left section -->
+                <div class="form-left">
+                    <form id="messageForm" onsubmit="return validateForm()">
+                        <label for="name">Name:</label>
+                        <input type="text" id="input-name" name="name" required><br><br>
+        
+                        <label for="dob">date of birth:</label>
+                        <input type="date" id="dob" name="dob" required><br><br>
+    
+                        <label>Gender:</label>
+                        <div class="gender-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                            <label for="male">Male</label>
+                            
+                            <input type="radio" id="female" name="gender" value="Perempuan" required>
+                            <label for="female">Female</label>
+                        </div>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+        
+                <!-- Right section -->
+                <div class="form-right">
+                    <h3>Current time : <span id="current-time"></span></h3>
+                    <br/>
+                    <p><strong>Name:</strong> <span id="result-name"></span></p>
+                    <p><strong>date of birth:</strong> <span id="result-dob"></span></p>
+                    <p><strong>Gender:</strong> <span id="result-gender"></span></p>
+                    <p><strong>Message:</strong> <span id="result-message"></span></p>
+                </div>
             </div>
          </section>
     </main>
@@ -84,6 +192,8 @@
      <footer>
         <p>&copy; 2021 Dina</p>
      </footer>
+
+     <script src="js/script.js"></script>
 </body>
 
 </html>
